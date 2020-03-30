@@ -36,7 +36,7 @@ namespace phonetic {
 
 		while (iss >> word) {
 			if (word.length() != b.length())break;
-			if (ans == "") {
+			if (word == "") {
 				throw std::runtime_error(std::string("Exception"));
 			}
 			int count = 0;//count the correct chars
