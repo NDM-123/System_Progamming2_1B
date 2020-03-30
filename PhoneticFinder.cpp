@@ -41,7 +41,7 @@ namespace phonetic {
                 if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0||(char)tolower(word[i])== (char)tolower(b[i]))
 {
 count++;
-}else{throw 1;}
+}else{count=0;}
 //if the same length to the 2 words return the answer!!!
  if ( (count == b.length() && count== word.length())) {
                     return word;
