@@ -17,7 +17,7 @@ namespace phonetic {
         if ((a == 'y' && b == 'i') || (b == 'y' && a == 'i'))return 0;
         if ((a == 'b' && b == 'f') || (b == 'b' && a == 'f') || (a == 'b' && b == 'p') || (b == 'b' && a == 'p'))
             return 0;
-        if ((a == 'f' && b == 'p') || (b == 'r' && a == 'p'))return 0;
+        if ((a == 'f' && b == 'p') || (b == 'f' && a == 'p'))return 0;
         if ((a == 'c' && b == 'q') || (b == 'c' && a == 'q') || (a == 'q' && b == 'k') || (b == 'q' && a == 'k'))
             return 0;
         if ((a == 'c' && b == 'k') || (b == 'c' && a == 'k'))return 0;
