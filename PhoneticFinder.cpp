@@ -41,7 +41,7 @@ namespace phonetic {
 				if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0 || (char)tolower(word[i]) == (char)tolower(b[i]))
 				{
 					count++;
-				}
+				}else{throw std::runtime_error(std::string("Exception"));}
 				if (word == "")return word = "Exception";;
 				//if the same length to the 2 words return the answer!!!
 				if ((count == b.length() && count == word.length() && b.length()==word.length())) {
