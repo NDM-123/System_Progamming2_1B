@@ -35,7 +35,7 @@ namespace phonetic {
 		stringstream iss(a);
 
 		while (iss >> word) {
-	//		if (word.length() != b.length())break;
+			if (word.length() != b.length())break;
 			int count = 0;//count the correct chars
 			for (int i = 0; i < word.length(); i++) {//run on chars
 				if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0 || (char)tolower(word[i]) == (char)tolower(b[i]))
