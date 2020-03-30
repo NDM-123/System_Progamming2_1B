@@ -52,9 +52,10 @@ count=0;//reset counter for next word
            }
         } catch (int e) {
             cout << "Exception 10: Not the same word";
+      return word="Exception";
         }
             
-word="Exception";
+    word="Exception";
 
         return word;
 
