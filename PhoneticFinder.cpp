@@ -10,8 +10,8 @@ namespace phonetic {
 
     int same(char a, char b) {
         if ((a == 'v' && b == 'w') || (b == 'v' && a == 'w'))return 0;
-        if ((a == 'g' && b == 'j') || (b == 'j' && a == 'g'))return 0;
-        if ((a == 's' && b == 'z') || (b == 'z' && a == 's'))return 0;
+        if ((a == 'g' && b == 'j') || (b == 'g' && a == 'j'))return 0;
+        if ((a == 's' && b == 'z') || (b == 's' && a == 'z'))return 0;
         if ((a == 't' && b == 'd') || (b == 't' && a == 'd'))return 0;
         if ((a == 'o' && b == 'u') || (b == 'o' && a == 'u'))return 0;
         if ((a == 'y' && b == 'i') || (b == 'y' && a == 'i'))return 0;
