@@ -17,7 +17,7 @@ namespace phonetic {
         if ((a == 'y' && b == 'i') || (b == 'y' && a == 'i'))return 0;
         if ((a == 'b' && b == 'f') || (b == 'b' && a == 'f') || (a == 'b' && b == 'p') || (b == 'b' && a == 'p'))
             return 0;
-        if ((a == 'f' && b == 'p') || (b == 'f' && a == 'p'))return 0;
+        if ((a == 'f' && b == 'p') || (b == 'r' && a == 'p'))return 0;
         if ((a == 'c' && b == 'q') || (b == 'c' && a == 'q') || (a == 'q' && b == 'k') || (b == 'q' && a == 'k'))
             return 0;
         if ((a == 'c' && b == 'k') || (b == 'c' && a == 'k'))return 0;
@@ -26,6 +26,7 @@ namespace phonetic {
 
 
     string find(string a, string b) {
+//  if std::strlen(a)!=std::strlen(b)return null;   irrelevant because obviously lengths are diffrent
 
  int count = 0;
 
@@ -39,20 +40,16 @@ namespace phonetic {
             for (int i = 0; i < word.length(); i++) {//run on chars
                 if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0||(char)tolower(word[i])== (char)tolower(b[i]))
 {
-    //if the same length to the 2 words return the answer!!!
+count++;
+}
+//if the same length to the 2 words return the answer!!!
  if ( (count == b.length() && count== word.length())) {
                     return word;
-}
-count++;
-
-
+                } 
 
 }
 count=0;//reset counter for next word
-
-                } 
            }
-           
         } catch (int e) {
             cout << "Exception 10: Not the same word";
         }
