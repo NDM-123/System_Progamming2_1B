@@ -36,9 +36,6 @@ namespace phonetic {
 
 		while (iss >> word) {
 			if (word.length() != b.length())break;
-			if (word == "") {
-				throw std::runtime_error(std::string("Exception"));
-			}
 			int count = 0;//count the correct chars
 			for (int i = 0; i < word.length(); i++) {//run on chars
 				if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0 || (char)tolower(word[i]) == (char)tolower(b[i]))
@@ -54,7 +51,9 @@ namespace phonetic {
 			}
 			count = 0;//reset counter for next word
 		}
-
+		if (word == "") {
+				throw std::runtime_error(std::string("Exception"));
+			}
 		return word = "Exception";;
 
 
