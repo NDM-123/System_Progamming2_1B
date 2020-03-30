@@ -55,7 +55,7 @@ count=0;//reset counter for next word
       return word="Exception";
         }
             
-    word="Exception";
+ //   word="Exception";
 
         return word;
 
