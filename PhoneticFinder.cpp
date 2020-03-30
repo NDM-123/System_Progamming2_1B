@@ -34,14 +34,15 @@ namespace phonetic {
     // making a string stream 
     stringstream iss(a); 
 
-  try {
+ // try {
     while (iss >> word) {
             int count = 0;//count the correct chars
             for (int i = 0; i < word.length(); i++) {//run on chars
                 if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0||(char)tolower(word[i])== (char)tolower(b[i]))
 {
 count++;
-}else{count=0;}
+}
+ if(word=="")return word="Exception";;
 //if the same length to the 2 words return the answer!!!
  if ( (count == b.length() && count== word.length())) {
                     return word;
@@ -50,14 +51,14 @@ count++;
 }
 count=0;//reset counter for next word
            }
-        } catch (int e) {
-            cout << "Exception 10: Not the same word";
-      return word="Exception";
-        }
-            
- //   word="Exception";
+//        } catch (int e) {
+//            cout << "Exception 10: Not the same word";
+//      return word="Exception";
+//        }
+               
+    
 
-        return word;
+        return word="Exception";;
 
 
     }
