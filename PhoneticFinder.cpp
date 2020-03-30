@@ -44,7 +44,7 @@ namespace phonetic {
 				}
 				if (word == "")return word = "Exception";;
 				//if the same length to the 2 words return the answer!!!
-				if ((count == b.length() && count == word.length())) {
+				if ((count == b.length() && count == word.length() && b.length()==word.length())) {
 					return word;
 				}
 
