@@ -43,9 +43,9 @@ namespace phonetic {
 count++;
 }
 //if the same length to the 2 words return the answer!!!
-// if ( (count == b.length() && count== word.length())) {
-//                    return word;
-//                } 
+ if ( (count == b.length() && count== word.length())) {
+                    return word;
+                } 
 
 }
 count=0;//reset counter for next word
