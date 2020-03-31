@@ -1,3 +1,5 @@
+/*Naor Maoz and Oz Klingel*/
+
 #include <iostream>
 #include "PhoneticFinder.hpp"
 #include <string>
