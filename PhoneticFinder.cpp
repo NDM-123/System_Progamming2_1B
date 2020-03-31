@@ -51,9 +51,9 @@ namespace phonetic {
 			}
 			count = 0;//reset counter for next word
 		}
-		if (word == "") {
-				throw std::runtime_error(std::string("Exception"));
-			}
+	//	if (word == "") {
+				throw std::runtime_error(std::string("Exception - Word wasnt found"));
+	//		}
 		return word = "Exception";;
 
 
