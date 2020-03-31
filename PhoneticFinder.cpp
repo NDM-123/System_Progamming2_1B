@@ -35,14 +35,16 @@ namespace phonetic {
 		stringstream iss(a);
 
 		while (iss >> word) {
-			if (word.length() != b.length())continue;
+			if (word.length() != b.length()) continue;	//if the stream is per word
+			
 			int count = 0;//count the correct chars
+			
 			for (int i = 0; i < word.length(); i++) {//run on chars
 				if (same((char)tolower(word[i]), (char)tolower(b[i])) == 0 || (char)tolower(word[i]) == (char)tolower(b[i]))
 				{
 					count++;
 				}//else{throw std::runtime_error(std::string("Exception"));}
-				if (word == "")return word = "Exception";;
+				if (word == "")	throw std::runtime_error(std::string("Exception - Word wasnt found"));
 				//if the same length to the 2 words return the answer!!!
 				if ((count == b.length() && count == word.length())) {// && b.length()==word.length())) {
 					return word;
@@ -54,7 +56,7 @@ namespace phonetic {
 	//	if (word == "") {
 				throw std::runtime_error(std::string("Exception - Word wasnt found"));
 	//		}
-		return word = "Exception";;
+		return word = "Exception";
 
 
 	}
